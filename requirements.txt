@@ -1,0 +1,8 @@
+--index-url https://pypi.tuna.tsinghua.edu.cn/simple
+langchain>=0.2
+langchain-community>=0.2
+python-dotenv>=1.0.1
+langchain-cli
+poetry
+azure-identity
+ipykernel

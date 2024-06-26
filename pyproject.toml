@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "ai-api-plus"
+version = "0.1.0"
+description = ""
+authors = ["azhao <azhao.1981@gmail.com>"]
+readme = "README.md"
+packages = [
+    { include = "app" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+uvicorn = "^0.23.2"
+langserve = {extras = ["server"], version = ">=0.0.30"}
+pydantic = "<2"
+rag-azure-search = {path = "packages/rag-azure-search", develop = true}
+
+
+azure-identity = "^1.17.1"
+[tool.poetry.group.dev.dependencies]
+langchain-cli = ">=0.0.15"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "tuna"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+priority = "primary"
