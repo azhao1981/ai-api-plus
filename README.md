@@ -5,7 +5,7 @@
 Install the LangChain CLI if you haven't yet
 
 ```bash
-uv venv .ai-api-plus -p /home/weiz/.py/python311
+uv venv .ai-api-plus -p ~/.py/python311
 . .env
 uv pip install -r requirements.txt
 ```

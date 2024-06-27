@@ -28,3 +28,6 @@ build-backend = "poetry.core.masonry.api"
 name = "tuna"
 url = "https://pypi.tuna.tsinghua.edu.cn/simple"
 priority = "primary"
+
+[tool.uv.pip]
+index-url = "https://pypi.tuna.tsinghua.edu.cn/simple"
